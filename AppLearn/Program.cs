@@ -27,10 +27,13 @@ namespace AppLearn
             Console.Write("Masukan Angka B = ");
             b = Convert.ToInt32(Console.ReadLine());
 
+            double aDouble = Convert.ToDouble(a);
+            double bDouble = Convert.ToDouble(b);
+
             Console.WriteLine("Hasil Penjumlahan = " + (a + b));
             Console.WriteLine("Hasil Pengurangan = " + (a - b));
             Console.WriteLine("Hasil Perkalian = " + (a * b));
-            Console.WriteLine("Hasil Pembagian = " + (a / b));
+            Console.WriteLine("Hasil Pembagian = " + (aDouble / bDouble));
             Console.WriteLine("Hasil Modulus = " + (a % b));
         }
     }
