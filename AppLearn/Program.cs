@@ -10,11 +10,16 @@ namespace AppLearn
     {
         static void Main(string[] args)
         {
-            string nama;
-            Console.Write("Siapa nama anda : ");
-            nama = Console.ReadLine();
+            // convert class => Mengubah tipe data ke tipe data yang lain
+            int a;
+            int b;
+            Console.Write("Masukan Angka a = ");
+            a = Convert.ToInt16(Console.ReadLine());
 
-            Console.WriteLine("Nama anda adalah : " + nama);
+            Console.Write("Masukan Angka b = ");
+            b = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("Angka adalah = " + (a+b));
         }
     }
 }
