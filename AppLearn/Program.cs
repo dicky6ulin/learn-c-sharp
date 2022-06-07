@@ -10,11 +10,19 @@ namespace AppLearn
     {
         static void Main(string[] args)
         {
-            String[] nama = { "nama1", "nama2", "nama3", "nama4", "nama5" };
-            foreach (String s in nama)
+            int a = 0;
+
+            //while (a < 5)
+            //{
+            //    Console.WriteLine("Dicky Agus Setiawan");
+            //    a++;
+            //}
+
+            do
             {
-                Console.WriteLine(s);
-            }
+                Console.WriteLine("Dicky Agus Setiawan");
+                a++;
+            } while (a < 5);
         }
     }
 }
