@@ -10,16 +10,28 @@ namespace AppLearn
     {
         static void Main(string[] args)
         {
-            // convert class => Mengubah tipe data ke tipe data yang lain
+            /*
+             1. penjumlahan = +
+             2. pengurangan = -
+             3. perkalian = *
+             4. pembagian = /
+             5. modulus / sisa bagi %
+             */
+
             int a;
             int b;
-            Console.Write("Masukan Angka a = ");
-            a = Convert.ToInt16(Console.ReadLine());
 
-            Console.Write("Masukan Angka b = ");
-            b = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Angka A = ");
+            a = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Angka adalah = " + (a+b));
+            Console.Write("Masukan Angka B = ");
+            b = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Hasil Penjumlahan = " + (a + b));
+            Console.WriteLine("Hasil Pengurangan = " + (a - b));
+            Console.WriteLine("Hasil Perkalian = " + (a * b));
+            Console.WriteLine("Hasil Pembagian = " + (a / b));
+            Console.WriteLine("Hasil Modulus = " + (a % b));
         }
     }
 }
