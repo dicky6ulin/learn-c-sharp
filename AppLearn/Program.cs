@@ -10,14 +10,10 @@ namespace AppLearn
     {
         static void Main(string[] args)
         {
-            int[] nilai = new int[3];
-            nilai[0] = 10;
-            nilai[1] = 20;
-            nilai[2] = 30;
-
-            for(int i = 0; i < 3; i++)
+            String[] nama = { "nama1", "nama2", "nama3", "nama4", "nama5" };
+            foreach (String s in nama)
             {
-                Console.WriteLine(nilai[i]);
+                Console.WriteLine(s);
             }
         }
     }
