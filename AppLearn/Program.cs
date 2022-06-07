@@ -10,22 +10,29 @@ namespace AppLearn
     {
         static void Main(string[] args)
         {
-            // struktur percabangan => if, else, else if
+            String username;
+            String password;
 
-            Console.Write("Masukan Nama anda : ");
-            String nama = Console.ReadLine();
+            Console.Write("Masukan username = ");
+            username = Console.ReadLine();
 
-            if (nama == "Dicky")
+            if(username == "admin")
             {
-                Console.WriteLine("Selamat datang Dicky");
+                Console.Write("Masukan passworld = ");
+                password = Console.ReadLine();
+
+                if (password == "admin")
+                {
+                    Console.WriteLine("Selamat datang admin");
+                } 
+                else
+                {
+                    Console.WriteLine("Password salah");
+                }
             } 
-            else if (nama == "Agus")
-            {
-                Console.WriteLine("Selamat datang Agus");
-            }
             else
             {
-                Console.WriteLine("Siapa anda ??");
+                Console.WriteLine("Username tidak ditemukan");
             }
         }
     }
