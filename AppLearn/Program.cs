@@ -10,24 +10,29 @@ namespace AppLearn
     {
         static void Main(string[] args)
         {
-            /*
-             AND = &&
-             OR = ||
-             NOT = !
-             */
+            int jurusan;
+            Console.WriteLine("Pilih Jurusan : ");
+            Console.WriteLine("1. RPL");
+            Console.WriteLine("2. TKJ");
+            Console.WriteLine("3. Multimedia");
 
-            //String nama = "hafiz";
-            //int umur = 1;
+            jurusan = Convert.ToInt32(Console.ReadLine());
 
-            //if(nama == "hafiz" && umur == 1)
-            //{
-            //    Console.WriteLine("Hallo Hafiz");
-            //}
-
-            Boolean hidup = false;
-            if (!hidup)
+            switch (jurusan)
             {
-                Console.WriteLine("Saya sudah mati");
+                case 1:
+                    Console.WriteLine("Pelajaran adalah RPL");
+                    break;
+                case 2:
+                    Console.WriteLine("Pelajaran adalah TKJ");
+                    break ;
+                case 3:
+                    Console.WriteLine("Pelajaran adalah Multimedia");
+                    break;
+                default:
+                    Console.WriteLine("Inputan tidak ada");
+                    break;
+
             }
         }
     }
