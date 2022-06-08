@@ -10,19 +10,25 @@ namespace AppLearn
     {
         static void Main(string[] args)
         {
-            int a = 0;
+            /*
+             AND = &&
+             OR = ||
+             NOT = !
+             */
 
-            //while (a < 5)
+            //String nama = "hafiz";
+            //int umur = 1;
+
+            //if(nama == "hafiz" && umur == 1)
             //{
-            //    Console.WriteLine("Dicky Agus Setiawan");
-            //    a++;
+            //    Console.WriteLine("Hallo Hafiz");
             //}
 
-            do
+            Boolean hidup = false;
+            if (!hidup)
             {
-                Console.WriteLine("Dicky Agus Setiawan");
-                a++;
-            } while (a < 5);
+                Console.WriteLine("Saya sudah mati");
+            }
         }
     }
 }
