@@ -8,13 +8,25 @@ namespace AppLearn
 {
     class Program
     {
+        enum hari 
+        {
+            senin = 1,
+            selasa,
+            rabu,
+            kamis,
+            jumat,
+            sabtu,
+            minggu
+        }
+
         static void Main(string[] args)
         {
-            double a = 2.5;
-            int b = 2;
+            //hari sekarang;
+            //sekarang = (hari)2;
+            //Console.WriteLine(sekarang);
 
-            int hasil = (int)(a + b);
-            Console.WriteLine(hasil);
+
+            //Console.WriteLine(hari.minggu);
         }
     }
 }
