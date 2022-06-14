@@ -10,7 +10,15 @@ namespace AppLearn
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World !!!");
+            // < > == <= >=
+            if(5 < 10)
+            {
+                Console.WriteLine("5 kurang dari 10");
+            } 
+            else
+            {
+                Console.WriteLine("false");
+            }
         }
     }
 }
