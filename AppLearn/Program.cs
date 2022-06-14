@@ -29,14 +29,43 @@ namespace AppLearn
 
             // ==================================================
 
-            String[] peliharaan = new String[2];
+            String[] peliharaan = new String[3];
             peliharaan[0] = "Ayam";
             peliharaan[1] = "Kucing";
             peliharaan[2] = "ikan";
 
             Console.WriteLine(peliharaan[0]);
 
+            Console.WriteLine("=============================================");
+            // ==================================================
+            // Array Multidimensi 
 
+
+            int[,] b = { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 } };
+            //Console.WriteLine(b[1, 3]);
+
+            for (int i = 0; i < b.GetLength(0); i++)
+            {
+                for (int j = 0; j < b.GetLength(1); j++)
+                {
+                    Console.Write(b[i,j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            // kalau ada 3 
+
+            int[,,] c = { 
+                { 
+                    { 1, 2 }, 
+                    { 3, 4 } 
+                }, 
+                { 
+                    { 5, 6 }, 
+                    { 7, 8 } 
+                } };
+
+            Console.WriteLine(c[1,0,1]); // 6
         }
     }
 }
