@@ -10,27 +10,11 @@ namespace AppLearn
     {
         static void Main(string[] args)
         {
-            tampilkan(80);
-        }
+            double a = 2.5;
+            int b = 2;
 
-        static void tampilkan(int a)
-        {
-            Console.WriteLine(a);
-        }
-
-        static void tampilkan(string a)
-        {
-            Console.WriteLine(a);
-        }
-
-        static void tampilkan(double a)
-        {
-            Console.WriteLine(a);
-        }
-
-        static void tampilkan(char a)
-        {
-            Console.WriteLine(a);
+            int hasil = (int)(a + b);
+            Console.WriteLine(hasil);
         }
     }
 }
