@@ -10,43 +10,27 @@ namespace AppLearn
     {
         static void Main(string[] args)
         {
-            int tambah(int a, int b)
-            {
-                return a + b;
-            }
-            int hasil = tambah(5, 5);
+            tampilkan(80);
+        }
 
-            Console.WriteLine(hasil);
+        static void tampilkan(int a)
+        {
+            Console.WriteLine(a);
+        }
 
+        static void tampilkan(string a)
+        {
+            Console.WriteLine(a);
+        }
 
+        static void tampilkan(double a)
+        {
+            Console.WriteLine(a);
+        }
 
-            //bool apakahLulus(int nilai)
-            //{
-            //    if (nilai < 78)
-            //    {
-            //        return true;
-            //    }
-            //    else
-            //    {
-            //        return false;
-            //    }
-            //}
-
-            //Console.Write("Masukan Nilai : ");
-            //int nilaiFinal = Convert.ToInt32(Console.ReadLine());
-
-            //if (apakahLulus(nilaiFinal))
-            //{
-            //    Console.WriteLine("anda lulus !");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("anda tidak lulus");
-            //}
-
-            string nilaiFnal = (hasil < 78) ? "Anda lulus !" : "Anda tidak lulus";
-            Console.WriteLine(nilaiFnal);
-
+        static void tampilkan(char a)
+        {
+            Console.WriteLine(a);
         }
     }
 }
