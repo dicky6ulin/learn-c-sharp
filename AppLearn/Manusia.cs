@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace AppLearn
 {
-    class Program
+    internal class Manusia
     {
-        static void Main(string[] args)
+        string nama;
+        int umur;
+        public void SayHay()
         {
-            Manusia Andy = new Manusia();
-
-            Andy.SayHay();
-
-            Console.ReadLine();
+            Console.WriteLine("Hello, apa kabar ??");
         }
     }
 }
